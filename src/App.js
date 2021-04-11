@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import GlassesContainer from "./components/GlassesContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <section className="glasses-app bg-dark" style={{ height: "100vh" }}>
+        <h2 className="text-center h2 text-white py-1">Glasses App</h2>
+        <div className="d-flex justify-content-center align-items-center">
+          <GlassesContainer />
+        </div>
+      </section>
     </div>
   );
 }
